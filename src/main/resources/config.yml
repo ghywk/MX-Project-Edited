@@ -1,0 +1,40 @@
+# %player% %check% %component% %info% %vl% %vlLimit%
+
+vlLimit: 100 # to ban
+vlReset: 15 # reset per minute
+alertMsg: "&9&l[MX] &e%player% &8>>&c %check% &7(&c%component%&7) &8%info% &f[%vl%/%vlLimit%]"
+
+unusual: "&9&l[MX] &e%player% &8>>&6 Playing suspiciously"
+suspected: "&9&l[MX] &e%player% &8>>&4 Looks like a cheater!"
+
+banCommand: "ban %player% 1d Unfair advantage"
+
+# "NONE" - disable bypass
+bypass: "mx.bypass"
+bcMsg: "&c&l[MX]&f %message%"
+punishEffect: false
+interactSpell: true
+
+# Some checks also apply measures,
+# such as a ban on dealing damage to others for a few seconds.
+# AGGRESSIVE (3) - rough hit blocking + teleport
+# CAREFUL (2) - rough hit blocking (full hit block)
+# LENIENT (1) - a detected cheater can still deal hits, but their outgoing damage will be very small
+# SILENT (0) - all measures fully disabled
+prevention: 2
+
+# will remove false positives from the cinematic camera,
+# but it will severely weaken the checks!
+# turn on only when you aim to minimize the number of FP
+ignoreCinematic: false
+
+# /plugins/MX/logs
+logInFiles: true
+
+# MX will save the last 600 rotation ticks.
+# You will be able to view player activity via the MX panel
+# /mx activity %player%
+rotationsContainer: true
+
+# Does not allow players to climb walls using ghost blocks
+preventGhostBlockAbuse: false
