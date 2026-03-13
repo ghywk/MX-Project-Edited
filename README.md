@@ -24,7 +24,7 @@
 - 需要 JDK 8+，建议使用所述版本的 JDK/JRE 进行编译与运行。
 - 使用 Maven 构建：`mvn clean package`。
 - 构建产物位于 `target/` 目录。若你在多环境部署，建议区分不同构建的产物名称或打包目录。
-- `paper-api`、`ProtocolLib`、`lombok` 为 `provided` 依赖：编译时使用，运行时需由服务端/环境提供。尤其是 **ProtocolLib 5.3.0** 。
+- `paper-api`、`ProtocolLib` 为 `provided` 依赖：编译时使用，运行时需由服务端/环境提供。尤其是 **ProtocolLib 5.3.0** 。
 - `src/main/resources` 下的 `.yml`、`.properties` 会参与过滤替换，`.dat` 不进行过滤。若新增资源类型，注意是否需要参与过滤。
 
 ## 已添加内容
