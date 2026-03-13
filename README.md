@@ -1,8 +1,8 @@
 ﻿# MX-Project-Edited
 
-本项目以 **MX-Project** 为基础进行构建与扩展，用途为 **Minecraft 反作弊**。
+本项目以 [MX](https://github.com/kireikosasha/MX-Project) 为基础进行构建与扩展，用途为 **Minecraft 反作弊**。
 
-相对原 [MX](https://github.com/kireikosasha/MX-Project)，本项目的优势在于提供更广泛/普适的 **Aim 检查**。
+相对 **MX-Project**，本项目的优势在于提供更广泛/普适的 **Aim 检查** 和 更多方面的检查。
 
 原MX缺少相关移动/发包检测，我会在后期开发逐渐加入相关内容。
 
@@ -18,7 +18,7 @@
 ## 使用说明
 原使用守则与具体方法可参考MX-Project的描述
 
-[MX](https://github.com/kireikosasha/MX-Project)
+[查看原自述文件](https://github.com/kireikosasha/MX-Project/blob/master/README.md)
 
 ## 构建与使用注意事项
 - 需要 JDK 8+，建议使用所述版本的 JDK/JRE 进行编译与运行。
@@ -27,7 +27,11 @@
 - `paper-api`、`ProtocolLib`、`lombok` 为 `provided` 依赖：编译时使用，运行时需由服务端/环境提供。尤其是 **ProtocolLib 5.3.0** 。
 - `src/main/resources` 下的 `.yml`、`.properties` 会参与过滤替换，`.dat` 不进行过滤。若新增资源类型，注意是否需要参与过滤。
 
-# 警告
+## 已添加内容
+- Aim检测: 机械化随机
+- 其他: 修复部分已知问题
+
+### 警告
 包括但不限于 SKID 内容、 AI CODE、 项目逻辑与结构差、 非100%准确率...
 
-您需要在使用过程中考虑 MX Edited 为服务器带来的负面影响！
+您需要在使用过程中考虑 MX Edited 为服务器带来的**负面影响**！
